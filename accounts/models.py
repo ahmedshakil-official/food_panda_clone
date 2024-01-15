@@ -37,10 +37,10 @@ class UserManager(BaseUserManager):
 
 
 class User(AbstractBaseUser):
-    RESTAURANT = 1
+    VENDOR = 1
     CUSTOMER = 2
     ROLE_CHOICES = (
-        (RESTAURANT, "Restaurant"),
+        (VENDOR, "Vendor"),
         (CUSTOMER, "Customer"),
     )
     first_name = models.CharField(max_length=55)
@@ -48,7 +48,7 @@ class User(AbstractBaseUser):
     username = models.CharField(max_length=55, unique=True)
     email = models.EmailField(unique=True)
     phone_number = models.CharField(max_length=20, blank=True)
-    role = models.PositiveSmallIntegerField(choices=ROLE_CHOICES, default=CUSTOMER, blank=True, null=True)
+    role = models.PositiveSmallIntegerField(choices=ROLE_CHOICES, blank=True, null=True)
     date_joined = models.DateTimeField(auto_now_add=True)
     last_login = models.DateTimeField(auto_now_add=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -72,6 +72,12 @@ class User(AbstractBaseUser):
 
     def has_module_perms(self, app_label):
         return True
+
+    def get_role(self):
+        if self.role == 1:
+            return "Vendor"
+        elif self.role == 2:
+            return "Customer"
 
 
 class UserProfile(models.Model):

@@ -1,0 +1,45 @@
+{% load static %}
+<!-- Header Start -->
+		<header id="header">
+			<div class="main-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<div class="logo">
+								<figure>
+									<a href="{% url 'home' %}" class="light-logo">
+										<img src="{% static 'logo/Menu.png' %}" alt="FoodPanda" width="180" height="60">
+									</a>
+								</figure>
+							</div>
+
+							<div class="main-location">
+								<ul>
+									<li class="location-has-children choose-location">
+										<form action="#">
+											<input type="text" value="" name="location" placeholder="Enter your delivery location" autocomplete="off" style="border: 2px solid #1b6d85; box-shadow: 0 0 10px rgba(27, 109, 133, 0.5); border-radius: 5px;">
+											<span id="foodbakery_radius_location_open" class="foodbakery-radius-location"><i class="icon-target5"></i></span>
+										</form>
+
+									</li>
+								</ul>
+								</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<div class="login-option">
+                                {% if user.is_authenticated %}
+                                    <a class="btn btn-outline-info" href="{% url 'my-account' %}" style="margin-top: 20%">My Account</a>
+                                    <a class="btn btn-outline-danger"  href="{% url 'logout' %}" style="margin-top: 20%">Logout</a>
+                                    
+                                {% else %}
+                                    <a class="btn btn-outline-primary" data-target="#sign-in" href="{% url 'registerUser' %}" style="margin-top: 7.5%">Register</a>
+                                    <a class="btn btn-outline-success" href="{% url 'registerVendor' %}" style="margin-top: 7.5%">Register Restaurant </a>
+                                    <a class="btn btn-outline-info"  data-target="#sign-in" href="{% url 'login' %}" style="margin-top: 7.5%">Login</a>
+                                {% endif %}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header> 
+<!-- Header End -->

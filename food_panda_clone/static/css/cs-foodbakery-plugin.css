@@ -19,14 +19,14 @@
 .login-form .input-filed input[type="text"]::-moz-placeholder, .login-form .input-filed input[type="password"]::-moz-placeholder, .login-form .input-filed input[type="email"]::-moz-placeholder { color: #9097a1; opacity: 1; }
 .login-form .input-filed input[type="text"]:-ms-input-placeholder, .login-form .input-filed input[type="password"]:-ms-input-placeholder, .login-form .input-filed input[type="email"]:-ms-input-placeholder { color: #9097a1; opacity: 1; }
 .login-form .input-filed input[type="text"]:-moz-placeholder, .login-form .input-filed input[type="password"]:-moz-placeholder, .login-form .input-filed input[type="email"]:-moz-placeholder { color: #9097a1; opacity: 1; }
-.login-form .forgot-switch { display: inline-block; font-size: 14px; color: #0ecfef; text-decoration: none; outline: none; cursor: pointer; }
+.login-form .forgot-switch { display: inline-block; font-size: 14px; color: #f30464; text-decoration: none; outline: none; cursor: pointer; }
 .login-form .forget-password { margin: 0 0 20px; color: #2f313a; }
 .login-form .input-filed input[type="submit"], .login-form .input-filed input[type="button"] { background-color: #F30464FF; border: 0; border-radius: 0px; color: #fff; font-size: 16px; font-weight: 600; margin: 0; min-height: 43px; text-transform: uppercase; width: 100%; }
 .login-form .input-filed.input-field-btn { margin-bottom: 20px; border: 1px solid #d1d3d8; border-radius: 3px; }
 .login-form .input-filed > .input-button-loader { display: block; }
 .login-form .forget-password span, .login-form .create- { font-size: 14px; color: #2f313a; margin: 0 5px 0 0; }
 .login-form .create- { margin: 0 0 15px; line-height: normal; }
-.login-form .create- a { color: #0ecfef; display: inline-block; font-size: 14px; outline: none; text-decoration: none; }
+.login-form .create- a { color: #f30464; display: inline-block; font-size: 14px; outline: none; text-decoration: none; }
 .login-form .modal-header { border: none; padding: 25px 25px 15px; }
 .login-form .modal-header h5 { margin: 0; float: left; color: #2f313a; letter-spacing: 1px; font-weight: 400; }
 .login-form .modal-header .close { color: #2f313a; opacity: 1; }
@@ -43,7 +43,7 @@
 .btn-red, .btn-green { background-color: #F30464FF; border-radius: 3px; color: #fff; font-size: 12px; font-weight: 700; letter-spacing: 0; line-height: normal; text-transform: uppercase; margin: 0 0 0 12px; padding: 10px 15px; }
 .login-form .cs-demo-login .cs-demo-login-lable { color: #F30464FF; }
 .login-form .cs-demo-login .login-switches .btn-red { color: #fff; margin-left: 0; width: 100%; text-align: center; background-color: #716e6e; }
-.login-form .cs-demo-login .login-switches .btn-green { background: #0ecfef; }
+.login-form .cs-demo-login .login-switches .btn-green { background: #f30464; }
 .login-form .cs-demo-login .login-switches a { position: relative; }
 /* Header Social Media Style */
 .login-form .social-media, .signup-form .social-media { text-align: center; }
@@ -172,7 +172,7 @@
 .main-search.fancy .field-holder ul { margin-bottom: 0; }
 .main-search.fancy .field-holder .chosen-container-single .chosen-single { padding: 10px 15px; border-radius: inherit; height: 50px; line-height: 50px; background-color: #fff; }
 .main-search.fancy .field-holder input[type="text"] { text-transform: uppercase; margin: 0; padding: 0 15px; border-radius: inherit; height: 50px; line-height: 50px; color: #000000; font-size: 12px; }
-.main-search.fancy .field-holder input[type="submit"] { margin: 0; padding: 10px 15px; border-radius: inherit; border: none; -webkit-box-shadow: none; box-shadow: none; width: 100%; height: 50px; line-height: 30px; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; background-color: #0ecfef; color: #fff; }
+.main-search.fancy .field-holder input[type="submit"] { margin: 0; padding: 10px 15px; border-radius: inherit; border: none; -webkit-box-shadow: none; box-shadow: none; width: 100%; height: 50px; line-height: 30px; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; background-color: #f30464; color: #fff; }
 .main-search.fancy .field-holder .chosen-container-single .chosen-single:before { position: absolute; color: #d1d1d1; font-size: 18px; top: 25px; right: 13px; content: '\e95a'; font-family: icomoon; }
 .main-search.fancy .chosen-container-single .chosen-single span { left: 0; line-height: 30px; color: #d1d1d1; font-size: 12px; }
 .main-search.fancy .chosen-container .chosen-results { padding: 0; margin: 0; }
@@ -1840,10 +1840,10 @@ div.daterangepicker { border: 1px solid #eceef4; -webkit-box-shadow: none; box-s
 .progressbar-nav li:before { content: counter(step); counter-increment: step; width: 22px; line-height: 20px; display: block; font-size: 12px; color: #666666; background: #e1e1e1; border-radius: 100px; margin: 0 auto 19px auto; z-index: 2; position: relative; height: 22px; border: solid 1px #cccccc; -moz-transition: background 0.3s ease-in-out; -webkit-transition: background 0.3s ease-in-out; transition: background 0.3s ease-in-out; }
 .progressbar-nav li:after { content: ''; width: 100%; height: 7px; background: #ebebeb; position: absolute; left: -50%; top: 9px; z-index: 1; border: 1px solid #cccccc; -moz-transition: background 0.3s ease-in-out; -webkit-transition: background 0.3s ease-in-out; transition: background 0.3s ease-in-out; }
 .progressbar-nav li:first-child:after { content: none; }
-.progressbar-nav li.active:before, .progressbar-nav li.active:after { background-color: #0ecfef; background-image: -webkit-linear-gradient(bottom, #0ecfef, #0ecfef); background-image: -webkit-gradient(linear, left bottom, left top, from(#0ecfef), to(#3bb417)); background-image: -moz- oldlinear-gradient(bottom, #29a105, #3bb417); background-image: linear-gradient(to top, #29a105, #3bb417); color: #fff; }
+.progressbar-nav li.active:before, .progressbar-nav li.active:after { background-color: #f30464; background-image: -webkit-linear-gradient(bottom, #f30464, #f30464); background-image: -webkit-gradient(linear, left bottom, left top, from(#f30464), to(#3bb417)); background-image: -moz- oldlinear-gradient(bottom, #29a105, #3bb417); background-image: linear-gradient(to top, #29a105, #3bb417); color: #fff; }
 .progressbar-nav li.active.processing:before { color: #fff; height: 26px; width: 26px; line-height: 24px; -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(0, 0, 0, 0.15); box-shadow: 0 0 5px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(0, 0, 0, 0.15); border: solid 1px #417d41; background-image: -webkit-linear-gradient(bottom, #29a105, #3bb417); background-image: -webkit-gradient(linear, left bottom, left top, from(#29a105), to(#3bb417)); background-image: -moz- oldlinear-gradient(bottom, #29a105, #3bb417); background-image: linear-gradient(to top, #29a105, #3bb417); margin: -1px auto 16px auto; content: counter(step); counter-increment: step; font-family: inherit; }
-.progressbar-nav li.active:before { background-color: #0ecfef; background-image: -webkit-linear-gradient(bottom, #0ecfef, #0ecfef); background-image: -webkit-gradient(linear, left bottom, left top, from(#0ecfef), to(#3bb417)); background-image: -moz- oldlinear-gradient(bottom, #29a105, #3bb417); background-image: linear-gradient(to top, #29a105, #3bb417); color: #fff; border: solid 3px #cccccc; line-height: 16px; content: "\e5ca"; font-family: 'icomoon'; -webkit-box-shadow: none; box-shadow: none; width: 22px; height: 22px; }
-.progressbar-nav li.active:after { border-color: #0ecfef; }
+.progressbar-nav li.active:before { background-color: #f30464; background-image: -webkit-linear-gradient(bottom, #f30464, #f30464); background-image: -webkit-gradient(linear, left bottom, left top, from(#f30464), to(#3bb417)); background-image: -moz- oldlinear-gradient(bottom, #29a105, #3bb417); background-image: linear-gradient(to top, #29a105, #3bb417); color: #fff; border: solid 3px #cccccc; line-height: 16px; content: "\e5ca"; font-family: 'icomoon'; -webkit-box-shadow: none; box-shadow: none; width: 22px; height: 22px; }
+.progressbar-nav li.active:after { border-color: #f30464; }
 .progressbar-nav li.cond-restaurant-settings a, .progressbar-nav li.cond-restaurant-settings:before { cursor: pointer; }
 .progressbar-nav li.cond-restaurant-settings { cursor: pointer; }
 .progressbar-nav li.cond-restaurant-settings:before { content: ''; }
