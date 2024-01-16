@@ -1,13 +1,13 @@
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse
-from django.shortcuts import render, redirect
-from accounts.forms import UserForm
+
 from django.contrib import messages, auth
 
 from accounts.models import User, UserProfile
 from vendor.forms import VendorForm
 
 from accounts.utils import detect_user
+from django.shortcuts import render, redirect
+from accounts.forms import UserForm
 
 
 # Create your views here.
@@ -16,6 +16,7 @@ def UserRegistration(request):
     if request.user and request.user.is_authenticated:
         messages.warning(request, "You are already logged in!")
         return redirect("my-account")
+
     if request.method == "POST":
         form = UserForm(request.POST)
         if form.is_valid():
