@@ -2,5 +2,6 @@
 {% load static %}
 
 {% block content %}
+    <h1>Welcome our beloved vendor Mr.{{ user.get_full_name }}</h1>
     <h2>This is {{ user.get_role }}</h2>
 {% endblock %}

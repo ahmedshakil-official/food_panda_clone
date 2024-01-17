@@ -1,8 +1,8 @@
 from django.urls import path, include
-from .views import home, dashboard
+from .views import home, vendor_dashboard, customer_dashboard
 
 urlpatterns = [
     path("", home, name="home"),
-    path("customer/dashboard", dashboard, name="customer-dashboard"),
-    path("vendor/dashboard", dashboard, name="vendor-dashboard"),
+    path("customer/dashboard", customer_dashboard, name="customer-dashboard"),
+    path("vendor/dashboard", vendor_dashboard, name="vendor-dashboard"),
 ]
