@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from vendor.models import Vendor
 
-# Create your views here.
+
+def vendor_profile(request):
+    return render(request, "vendor/profile.html")

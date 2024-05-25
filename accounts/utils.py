@@ -10,7 +10,7 @@ from django.utils.http import urlsafe_base64_encode
 
 def detect_user(user):
     if user.role == 1:
-        return "vendor-dashboard"
+        return "vendor"
     elif user.role == 2:
         return "customer-dashboard"
     elif user.role is None and user.is_superuser:

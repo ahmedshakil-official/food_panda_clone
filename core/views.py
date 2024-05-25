@@ -4,8 +4,11 @@ from django.shortcuts import render
 
 from common.permissions import isVendor, isCustomer
 
+from vendor.models import Vendor
+
 
 # Create your views here.
+
 
 def home(request):
     return render(request, "core/home.html")
@@ -20,4 +23,4 @@ def customer_dashboard(request):
 @login_required(login_url="login")
 @user_passes_test(isVendor)
 def vendor_dashboard(request):
-    return render(request, "core/vendor_dashboard.html")
+    return render(request, "../templates/vendor/vendor_dashboard.html")

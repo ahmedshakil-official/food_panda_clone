@@ -4,5 +4,4 @@ from .views import home, vendor_dashboard, customer_dashboard
 urlpatterns = [
     path("", home, name="home"),
     path("customer/dashboard", customer_dashboard, name="customer-dashboard"),
-    path("vendor/dashboard", vendor_dashboard, name="vendor-dashboard"),
 ]

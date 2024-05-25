@@ -1,0 +1,10 @@
+{% autoescape off %}
+    Hi {{ user.get_full_name }},
+    {% if is_approved %}
+        Congratulations, you are approved by our admin team. Enjoy our app.
+        --Food Panda
+    {% else %}
+        Sorry, you are not considered for approval by our admin team. Please contact with us for further process.
+        --Food Panda
+    {% endif %}
+{% endautoescape %}
