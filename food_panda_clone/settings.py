@@ -69,6 +69,7 @@ TEMPLATES = [
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
                 "common.context_processors.get_vendor",
+                "common.context_processors.get_google_api_key",
             ],
         },
     },
@@ -154,3 +155,5 @@ INTERNAL_IPS = [
     "127.0.0.1",
     # ...
 ]
+
+GOOGLE_API_KEY = config("GOOGLE_API_KEY")
